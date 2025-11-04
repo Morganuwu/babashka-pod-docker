@@ -29,3 +29,11 @@ jobs:
         release_tag: "0.2.0"
         overwrite: TRUE
         compress_assets: OFF
+
+
+    - name: Run tests
+      uses: actions/setup-go@v5
+      with:
+        go-version: "1.21"
+    - run: go test ./... -v
+

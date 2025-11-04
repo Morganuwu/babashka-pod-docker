@@ -32,7 +32,7 @@ type DescribeResponse struct {
 
 type InvokeResponse struct {
 	Id     string   "id"
-	Value  string   "value" // stringified json response
+	Value  string   "value"
 	Status []string "status"
 }
 
@@ -72,7 +72,7 @@ func WriteInvokeResponse(inputMessage *Message, value any) error {
 }
 
 func WriteNotDoneInvokeResponse(inputMessage *Message, value any) error {
-       if value == nil {
+	if value == nil {
 		return nil
 	}
 	resultValue, err := json.Marshal(value)

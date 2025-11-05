@@ -19,7 +19,7 @@ func TestAdditionLogic(t *testing.T) {
 	passed := result == expected
 	printResult("AdditionLogic", passed)
 	if !passed {
-		t.Errorf("Suma incorrecta")
+		t.Errorf("incorrecta")
 	}
 }
 
@@ -29,7 +29,7 @@ func TestSubtractionLogic(t *testing.T) {
 	passed := result == expected
 	printResult("SubtractionLogic", passed)
 	if !passed {
-		t.Errorf("Resta incorrecta")
+		t.Errorf("incorrecta")
 	}
 }
 
@@ -127,7 +127,7 @@ func TestArraySum(t *testing.T) {
 	passed := sum == 6
 	printResult("ArraySum", passed)
 	if !passed {
-		t.Errorf("Suma de array incorrecta")
+		t.Errorf("incorrecta")
 	}
 }
 

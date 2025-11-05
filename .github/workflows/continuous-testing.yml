@@ -8,7 +8,7 @@ on:
 
 jobs:
   build-and-test:
-    name:  Continuous Integration (CI)
+    name:  Continuous Integration (CIa)
     runs-on: ubuntu-latest
 
     steps:

@@ -44,11 +44,11 @@ jobs:
 
       - name: Build Docker Image
         run: |
-          docker build -t usuario/proyecto-ci-cd:latest .
+          run: docker build -t isaac466/proyecto-ci-cd:latest .
 
       - name: Push Docker Image
         run: |
-          docker push usuario/proyecto-ci-cd:latest
+          docker push isaac466/proyecto-ci-cd:latest
 
       - name: Confirm Deployment
         run: echo " Imagen Docker subida correctamente al registro remoto."

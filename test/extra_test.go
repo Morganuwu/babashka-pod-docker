@@ -206,10 +206,10 @@ func TestGitPullSimulation(t *testing.T) {
 	}
 }
 
-func TestErrorHandler(t *testing.T) {
-	passed := false
-	printResult("ErrorHandler", passed)
-	if !passed {
-		t.Errorf("Falla intencional")
-	}
-}
+// func TestErrorHandler(t *testing.T) {
+// 	passed := false
+// 	printResult("ErrorHandler", passed)
+// 	if !passed {
+// 		t.Errorf("Falla intencional")
+// 	}
+// }

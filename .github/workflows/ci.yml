@@ -2,22 +2,25 @@ name: Go CI
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
 
 jobs:
   test:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout código
-      uses: actions/checkout@v4
+      - name: Checkout código
+        uses: actions/checkout@v4
 
-    - name: Instalar Go
-      uses: actions/setup-go@v5
-      with:
-        go-version: '1.22' 
+      - name: Instalar Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.22' # o 1.21.6 si usas esa versión
 
-    - name: Ejecutar pruebas unitarias
-      run: go test ./... -v
+      - name: Limpiar y actualizar dependencias
+        run: go mod tidy
+
+      - name: Ejecutar pruebas unitarias
+        run: go test ./... -v

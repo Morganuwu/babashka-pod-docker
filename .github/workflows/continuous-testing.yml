@@ -8,7 +8,7 @@ on:
 
 jobs:
   build-and-test:
-    name: 🧪 Continuous Integration (CI)
+    name:  Continuous Integration (CI)
     runs-on: ubuntu-latest
 
     steps:
@@ -27,7 +27,7 @@ jobs:
           echo "=== Pruebas completadas ==="
 
   deploy:
-    name: 🚀 Continuous Delivery (CD)
+    name: Continuous Delivery (CD)
     runs-on: ubuntu-latest
     needs: build-and-test
     if: github.ref == 'refs/heads/main'
@@ -72,10 +72,10 @@ jobs:
       - name: Simular monitoreo del servicio
         run: |
           echo "Monitoreando servicio..."
-          echo "✅ No se detectaron errores. El sistema funciona correctamente."
+          echo "No se detectaron errores. El sistema funciona correctamente."
 
   maintenance:
-    name: 🧰 Infrastructure & Maintenance
+    name:  Infrastructure & Maintenance
     runs-on: ubuntu-latest
     needs: monitoring
 
@@ -87,9 +87,9 @@ jobs:
 
       - name: Limpiar dependencias innecesarias
         run: |
-          echo "🧹 Ejecutando limpieza de dependencias..."
+          echo "Ejecutando limpieza de dependencias..."
           go clean -modcache
           echo "Limpieza completada."
 
       - name: Confirm Maintenance
-        run: echo "🛠️ Mantenimiento preventivo completado exitosamente."
+        run: echo "Mantenimiento preventivo completado exitosamente."

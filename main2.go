@@ -6,8 +6,6 @@ import (
 	"time"
 )
 
-// Estructura de datos del usuariosjsjjs
-// //prueba de uwu
 type Usuario struct {
 	ID     int
 	Nombre string
@@ -25,13 +23,12 @@ func main() {
 		return
 	}
 
-	// Base de datos simulada
 	usuarios := []Usuario{
-		{1, "Ana Torres", "ana.torres@example.com", 29, "Ciudad de México", "Av. Reforma #123", "Administradora"},
-		{2, "Luis Gómez", "luis.gomez@example.com", 35, "Guadalajara", "Calle Hidalgo #56", "Técnico de soporte"},
-		{3, "María López", "maria.lopez@example.com", 31, "Monterrey", "Av. Constitución #22", "Diseñadora"},
-		{4, "Carlos Rivera", "carlos.rivera@example.com", 28, "Puebla", "Calle 5 de Mayo #67", "Desarrollador"},
-		{5, "Lucía Hernández", "lucia.hernandez@example.com", 40, "Querétaro", "Blvd. Bernardo Quintana #90", "Gerente de proyecto"},
+		{1, "Ana Torres", "ana.torres@Gmail.com", 29, "Ciudad de México", "Av. Reforma #123", "Administradora"},
+		{2, "Luis Gómez", "luis.gomez@Gmail.com", 35, "Guadalajara", "Calle Hidalgo #56", "Técnico de soporte"},
+		{3, "María López", "maria.lopez@Gmail.com", 31, "Monterrey", "Av. Constitución #22", "Diseñadora"},
+		{4, "Carlos Rivera", "carlos.rivera@Gmail.com", 28, "Puebla", "Calle 5 de Mayo #67", "Desarrollador"},
+		{5, "Lucía Hernández", "lucia.hernandez@Gmail.com", 40, "Querétaro", "Blvd. Bernardo Quintana #90", "Gerente de proyecto"},
 	}
 
 	fmt.Println("=======================================")
@@ -65,7 +62,6 @@ func main() {
 	}
 }
 
-// Función de login
 func login() bool {
 	const usuarioCorrecto = "morgan"
 	const contrasenaCorrecta = "123"

@@ -24,6 +24,6 @@ jobs:
 
       - name: Ejecutar pruebas unitarias
         run: |
-          echo "=== Iniciando pruebas unitarias ==="
+          echo "=== Iniciando pruebas unitarias XD ==="
           go test ./... -v || true
           echo "=== Pruebas completadas sin detener el pipeline ==="

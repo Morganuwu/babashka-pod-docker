@@ -24,7 +24,7 @@ func main() {
 	}
 
 	usuarios := []Usuario{
-		{1, "Ana Torres", "ana.torres@Gmail.com", 29, "Ciudad de México", "Av. Reforma #123", "Administradora"},
+		{1, "Ana Torres", "ana.torres@Gmail.com", 29, "Ciudad de morelos", "Av. Reforma #123", "Administradora"},
 		{2, "Luis Gómez", "luis.gomez@Gmail.com", 35, "Guadalajara", "Calle Hidalgo #56", "Técnico de soporte"},
 		{3, "María López", "maria.lopez@Gmail.com", 31, "Monterrey", "Av. Constitución #22", "Diseñadora"},
 		{4, "Carlos Rivera", "carlos.rivera@Gmail.com", 28, "Puebla", "Calle 5 de Mayo #67", "Desarrollador"},

@@ -17,7 +17,7 @@ type Usuario struct {
 }
 
 func main() {
-	//  Login de acceso
+	//  Login de accesopopowjpoadwjpajawpj
 	if !login() {
 		fmt.Println("\nDemasiados intentos fallidos. Cerrando el sistema.")
 		return
@@ -65,7 +65,7 @@ func main() {
 
 func login() bool {
 	const usuarioCorrecto = "morgan"
-	const contrasenaCorrecta = "123"
+	const contrasenaCorrecta = "123456"
 	intentos := 0
 	maxIntentos := 3
 

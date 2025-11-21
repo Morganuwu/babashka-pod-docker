@@ -28,7 +28,7 @@ func main() {
 		{2, "Luis Gómez", "luis.gomez@Gmail.com", 35, "Guadalajara", "Calle Hidalgo #56", "Técnico de soporte"},
 		{3, "María López", "maria.lopez@Gmail.com", 31, "Monterrey", "Av. Constitución #22", "Diseñadora"},
 		{4, "Carlos Rivera", "carlos.rivera@Gmail.com", 28, "Puebla", "Calle 5 de Mayo #67", "Desarrollador"},
-		{5, "Lucía Hernández", "lucia.hernandez@Gmail.com", 40, "Querétaro", "Blvd. Bernardo Quintana #90", "Gerente de proyecto"}
+		{5, "Lucía Hernández", "lucia.hernandez@Gmail.com", 40, "Querétaro", "Blvd. Bernardo Quintana #90", "Gerente de proyecto"},
 		{6, "Anneth Martinez", "Anneth.mtz@Gmail.com", 40, "Juarez", "Blvd. Bernardo Quintana #90", "Gerente de proyecto"},
 	}
 

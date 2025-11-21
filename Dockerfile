@@ -11,9 +11,11 @@ RUN go mod download
 # Copiar código fuente
 COPY main2.go ./
 COPY docker/ ./docker/
-COPY babashka/ ./babashka/
 
-# Compilar los dos programas: Babashka pod y main2.go
+# ❌ Esta línea fallaba y se elimina
+# COPY babashka/ ./babashka/
+
+# Compilar ejecutables
 RUN CGO_ENABLED=0 go build -ldflags "-s -w" -o babashka-pod-docker
 RUN go build -ldflags "-s -w" -o buscador main2.go
 
@@ -35,5 +37,4 @@ COPY --from=build /app/buscador /usr/local/bin/buscador
 RUN chmod 755 /root/.babashka/pods/repository/docker/docker-tools/0.1.0/babashka-pod-docker \
     && chmod 755 /usr/local/bin/buscador
 
-# Comando por defecto (puedes ejecutar el buscador o abrir shell)
 CMD ["/bin/sh"]

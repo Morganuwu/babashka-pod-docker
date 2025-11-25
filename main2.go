@@ -30,6 +30,7 @@ func main() {
 		{4, "Carlos Rivera", "carlos.rivera@Gmail.com", 28, "Puebla", "Calle 5 de Mayo #67", "Desarrollador"},
 		{5, "Lucía Hernández", "lucia.hernandez@Gmail.com", 40, "Querétaro", "Blvd. Bernardo Quintana #90", "Gerente de proyecto"},
 		{6, "Anneth Martinez", "Anneth.mtz@Gmail.com", 40, "Juarez", "Blvd. Bernardo Quintana #90", "Gerente de proyecto"},
+		{7, "Anneth Torres", "Anneth.torres@Gmail.com", 40, "Juarez", "Blvd. Bernardo Quintana #90", "Gerente de proyecto"},
 	}
 
 	fmt.Println("=======================================")
